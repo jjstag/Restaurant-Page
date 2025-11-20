@@ -1,3 +1,4 @@
+import Head from "./loadHead.js"
 import "./styles.css";
 
-console.log("Hello, world!")
+Head()
