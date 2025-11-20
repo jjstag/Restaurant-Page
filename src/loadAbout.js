@@ -1,11 +1,10 @@
-import chefHatImg from "./Images/chef-hat.svg"
-
-function Head() {
+function Home() {
     
     const div = document.getElementById("content")
 
     const img = document.createElement("img")
     img.src = chefHatImg
+    img.id = "chefHatImg"
     const header = document.createElement("h1")
     header.textContent = "Emiliano's Italian"
     const para = document.createElement("p")
@@ -15,4 +14,4 @@ function Head() {
     div.appendChild(para)
 }
 
-export default Head
+export default Home
