@@ -1,19 +1,43 @@
-function Menu() {
-    
-    const div = document.getElementById("content")
+import bruschetta from "./Images/bruschetta.jpg"
+import gelatoVanilla from "./Images/gelato-vanilla.jpg"
+import ravioli from "./Images/ravioli.jpg"
+import margheritaPizza from "./Images/margherita-pizza.jpg"
+import risotto from "./Images/risotto.jpg"
+import chickenParmesan from "./Images/chicken-parmesan.jpeg"
+import panzanellaSalad from "./Images/panzanella-salad.jpg"
+import sandwichCookies from "./Images/sandwich-cookies.jpeg"
+import gelatMint from "./Images/gelato-mint.jpg"
+import pastaCarbonara from "./Images/pasta-carbonara.jpg"
+import spaghetti from "./Images/spaghetti.jpeg"
+import gelatoStrawberry from "./Images/gelato-strawberry.jpg"
+import piadina from "./Images/piadina.jpg"
+import tiramisu from "./Images/tiramisu.jpg"
 
+const images = {
+  bruschetta,
+  gelatoVanilla,
+  ravioli,
+  margheritaPizza,
+  risotto,
+  chickenParmesan,
+  panzanellaSalad,
+  sandwichCookies,
+  gelatMint,
+  pastaCarbonara,
+  spaghetti,
+  gelatoStrawberry,
+  piadina,
+  tiramisu,
+}
+
+function Menu(container) {
+  for (const image in images) {
     const img = document.createElement("img")
-    img.src = chefHatImg
-    img.id = "chefHatImg"
-    const h1 = document.createElement("h1")
-    h1.textContent = "Emiliano's Italian"
-    h1.id = "titleHeader"
-    const para = document.createElement("p")
-    para.textContent = "Emiliano's Italian is truly a spectacular experience. You'll savor your time eating the chicken parmesan special, topped with fresh basil and fresh cherry tomatoes. You will dream of having just one more bite of that mouthwatering panzanella salad. This sentence exists because I wanted the paragraph to look bigger on the webpage. Thus, it is here, lying sandwiched between a few sentences about the food. Very pretty. The margarita pizza is a must. Flavorful and topped with everything on a normal margarita, it is the definition of a perfect dish."
-    para.id = "descriptionPara"
-    div.appendChild(img)
-    div.appendChild(h1)
-    div.appendChild(para)
+    img.src = images[image]
+    img.className = "menuImage"
+    img.alt = image
+    container.appendChild(img)
+  }
 }
 
 export default Menu

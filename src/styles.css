@@ -73,14 +73,14 @@ nav {
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top: 10px;
 }
 
-#content {
+#content:has(> #chefHatImg) {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 h1 {
   text-align: center;
@@ -92,4 +92,17 @@ p {
 
 #chefHatImg {
   max-width: 200px;
+}
+
+#content:has(> .menuImage) {
+  margin: 10px auto;
+  width: min(700px, 100%);
+  columns: 3 150px;
+  column-gap: 10px;
+}
+
+.menuImage {
+  border-radius: 15px;
+  display: block;
+  margin-bottom: 10px;
 }
