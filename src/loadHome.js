@@ -11,7 +11,7 @@ function Home() {
     h1.textContent = "Emiliano's Italian"
     h1.id = "titleHeader"
     const para = document.createElement("p")
-    para.textContent = "Emiliano's Italian is truly a spectacular experience. You will savor eating the chicken parmesan special, topped with fresh basil and fresh cherry tomatoes. You will dream of having just one more bite of that mouthwatering panzanella salad. This is a really long paragraph that's secretly nonsense sandwiched between a few sentences about the food. This paragraph is so long because it needs to look good on the page. This paragraph is very pretty. The margarita pizza is a must. Flavorful and topped with everything on a normal margarita, it is the definition of a perfect dish."
+    para.textContent = "Emiliano's Italian is truly a memorable experience. You'll surely enjoy your time trying the chicken parmesan special, topped with fresh basil and fresh cherry tomatoes. We are confident you'll order seconds of our signature panzanella salad. Not to mention, the margherita pizza is a crowd favorite. Flavorful and topped with everything on a normal margarita, it is the definition of a perfect dish. Don't forget to ask for the desserts menu when you're finished. We're in no shortage of cultural delicacies."
     para.id = "descriptionPara"
     div.appendChild(img)
     div.appendChild(h1)
