@@ -9,7 +9,7 @@ function Home(container) {
     h1.textContent = "Emiliano's Italian"
     h1.id = "titleHeader"
     const para = document.createElement("p")
-    para.textContent = "Emiliano's Italian is truly a memorable experience. You'll surely enjoy your time trying the chicken parmesan special, topped with fresh basil and fresh cherry tomatoes. We are confident you'll order seconds of our signature panzanella salad. Not to mention, the margherita pizza is a crowd favorite. Flavorful and topped with everything on a normal margarita, it is the definition of a perfect dish. Don't forget to ask for the desserts menu when you're finished. We're in no shortage of cultural delicacies."
+    para.textContent = "Emiliano's Italian is truly a memorable experience. Come try our chicken parmesan, topped with fresh basil and cherry tomatoes. Not to mention our signature panzanella salad. Another choice is our margherita pizza, a classic. Flavorful and timeless, the definition of a perfect dish. Don't forget to ask for the desserts menu when you're finished! We're in no shortage of treats."
     para.id = "descriptionPara"
     container.appendChild(img)
     container.appendChild(h1)

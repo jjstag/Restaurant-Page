@@ -1,20 +1,19 @@
-const div = document.getElementById("content")
+function About(container) {
+    const contactDiv = document.createElement("div")
+    contactDiv.id = "contactDiv"
+    container.appendChild(contactDiv)
 
-function About() {
-    
+    const phone = document.createElement("p")
+    const email = document.createElement("p")
+    const instagram = document.createElement("p")
 
-    const img = document.createElement("img")
-    img.src = chefHatImg
-    img.id = "chefHatImg"
-    const h1 = document.createElement("h1")
-    h1.textContent = "Emiliano's Italian"
-    h1.id = "titleHeader"
-    const para = document.createElement("p")
-    para.textContent = "Emiliano's Italian is truly a spectacular experience. You'll savor your time eating the chicken parmesan special, topped with fresh basil and fresh cherry tomatoes. You will dream of having just one more bite of that mouthwatering panzanella salad. This sentence exists because I wanted the paragraph to look bigger on the webpage. Thus, it is here, lying sandwiched between a few sentences about the food. Very pretty. The margarita pizza is a must. Flavorful and topped with everything on a normal margarita, it is the definition of a perfect dish."
-    para.id = "descriptionPara"
-    container.appendChild(img)
-    container.appendChild(h1)
-    container.appendChild(para)
+    phone.textContent = "555-0100"
+    email.textContent = "emiliano@emilianositalian.com"
+    instagram.textContent = "@EmilianosItalian"
+
+    contactDiv.appendChild(phone)
+    contactDiv.appendChild(email)
+    contactDiv.appendChild(instagram)
 }
 
-export default About 
+export default About

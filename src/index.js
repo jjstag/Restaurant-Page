@@ -1,5 +1,6 @@
 import Home from "./loadHome.js"
 import Menu from "./loadMenu.js"
+import About from "./loadAbout.js"
 import "./styles.css";
 
 const div = document.getElementById("content")
@@ -19,6 +20,7 @@ nav.addEventListener("click", (e) => {
             break;
         case "aboutBtn":
             console.log("About")
+            About(div)
             break;
         default:
             break; 
